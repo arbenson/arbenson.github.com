@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>arbenson</title>
+  </head>
+  <body>
+    <header>
+      <h2 align="left">Austin Reilley Benson - Research</h2>
+    </header>
+    <nav>
+      <a href="./index.html">Home</a> |
+      <a href="./research.html">Research</a> |
+    </nav>
+    <br />
+    
+    <article align="left">
+      <h4><a name="bebop">Berkeley Benchmarking and Optimization Group</a></h4>
+      <p>The 
+	<a href="http://bebop.cs.berkeley.edu">BeBOP</a>
+	group is a part of the
+	<a href="http://parlab.eecs.berkeley.edu">Berkeley ParLab</a>.
+	My advisor is 
+	<a href="http://www.cs.berkeley.edu/~demmel/">Professor Jim Demmel</a>.</p>
+      <p>I am currently working on Tall and Skinny QR (TSQR) factorizations in MapReduce frameworks. 
+        My CS 267 (Applications of Parallel Computing) project investigated TSQR using Hadoop on Magellan, a cloud testbed at NERSC.  
+        I am interested in bringing linear algebra computation to cloud computing environments.</p>
+      <br />
+      <table>
+	<caption align="bottom"> <i>Left: MapReduce scheme for computing A<sup>t</sup>A.
+	    Right: MapReduce scheme for computing AR<sup>-1</sup>. </caption>
+	<tr>
+	  <td>
+	    <img src="./images/AtA_MR.png" height="30%" alt="AtA">
+	  </td>
+	  <td>
+	    <img src="./images/ARinv_MR.png" height="30%" alt="ARinv">
+	  </td>
+	</tr> 
+      </table>
+      <br />
+
+
+
+      <br /><br />
+      <img src="./images/hr_line.jpg" width="100%" height="2" alt="">
+
+      <br />
+      <h4><a name="grif">Gamma-ray Imaging Framework</a></h4>
+      <br /><br />
+      <table>
+	<tr>
+	  <td>
+	    <img src="./images/donuts.png" height = "60%" width = "80%" alt="Donuts">
+	  </td>
+	  <td>
+	    <img src="./images/bearing.png" height = "60%" width = "60%" alt="Bearing">
+	  </td>
+	</tr>
+      </table>
+      <p>
+	The GRIF project is part of the Berkeley Applied Research on the Imaging of Neutrons and Gamma-rays
+	<a href="http://bearing.berkeley.edu/">(Bearing)</a> group, 
+	which is a subset of the Domestic Nuclear Threat Security Initiative
+	<a href="http://donuts.berkeley.edu/">(Donuts)</a>.  
+	My advisors are
+	<a href="http://www.nuc.berkeley.edu/People/Daniel_Chivers">Dr. Dan Chivers</a>
+        and Dr. Mark Bandstra.  The Bearing group is an interdisciplinary 
+	effort by students and researchers in nuclear engineering, (astro)physics, mathematics, 
+        electrical engineering, and computer science that works on problems in nuclear
+        detection.
+      </p>
+      <p>
+	I am developing a parallel, multi-platform software framework for gamma-ray imaging 
+        that is used for nuclear detection.  The project is designed to be flexible enough for researchers
+        outside of our group to adopt as a common model for detector software support.
+        I have worked on data analysis, backend architecture, and code generation techniques for the project.
+        The code generation allows end-users to tweak system parameters during run-time. The
+        picture below shows 15 channel reads that are updated in near-real-time in parallel.
+      </p>
+      <br /><br />
+      <img src="./images/grif_example.png" width="60%" align="center">
+      <br /><br />
+      <img src="./images/hr_line.jpg" width="100%" height="2" alt="">
+      <br />
+      <h4><a name="ieor">UC-Berkeley Department of Industrial Engineering and Operations Research</a></h4>
+      <p>
+	For the IEOR department, my advisors were 
+	<a href="http://www.ieor.berkeley.edu/~hochbaum/">Professor Dorit Hochbaum</a>
+	and 
+	<a href="http://www.eng.tau.ac.il/~barak/">Dr. Barak Fishbain.</a>
+      </p>
+      <p>
+	I performed research on algorithmic methods for computational biology.  Specifically, I looked
+	at MRI sequences provided by the OsteoArthritis Initiative
+	<a href="http://oai.epi-ucsf.org/datarelease/">(OAI)</a>.  
+	The OAI has an open database of knee scans along with accompanying data about the patients. The patients 
+	were followed over a 48-month period, and data is available over different visits over the time interval. 
+	This turns into a large data mining project for a community of researchers in engineering, computer science, and medicine. 
+	Below are two examples of how the images can be cut (using the pseudoflow maximum flow algorithm) to look at the cartilage 
+        or bone segment of the image. 
+      </p>
+       <table class="image">
+	<caption align="bottom"> <i>Left: Orignal MRI
+            Right:Cut of cartilage pixels</i> </caption>
+	<tr><td>
+            <img src="./images/cartilage_cut.png" width="600" height="320"><br />
+      </td></tr></table>
+      <table class="image">
+	<caption align="bottom"> <i>Left: Orignal MRI
+            Right:Cut of bone pixels. Total = #(total pixels), Cut = #(bone pixels in cut)</i> </caption>
+	<tr><td>
+            <img src="./images/bone_cut.png" width="600" height="350">
+      </td></tr></table>
+      <br />
+    </article>
+    <br /><br />
+  </body>
+</html>
