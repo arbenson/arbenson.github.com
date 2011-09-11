@@ -1,0 +1,131 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2011 Austin R. Benson <arbenson@gmail.com> http://arbenson.github.com
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\desitem}[1]{\item #1 \vspace{-7pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\expsubheading}[3]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}
+\emph{#3}
+\vspace{-6pt}
+}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Austin Reilley Benson} \\
+Berkeley, CA \\
+http://arbenson.github.com
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Objective}
+\begin{itemize}
+\item{Fall 2012 admission to a computer science PhD program with a research emphasis in high-performance computing, numerical linear algebra, and/or distributed systems}
+\end{itemize}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+	University of California, Berkeley & Expected Graduation May 2012
+	\end{tabular*}
+	\vspace{-3pt}
+	\begin{itemize}
+	         \resitem{B.S. Computer Science and Engineering}
+        	         \resitem{B.A. Applied Mathematics (algorithms emphasis)}
+        	         \resitem{GPA: 3.86/4.0}
+             	\resitem{Coursework: (CS) Operating Systems, parallel computing, artificial intelligence, algorithms; 
+	                         (Math) Matrix computations, numerical analysis, probability theory, stohastic processes, algebra, analysis}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Research and Work Experience}
+\begin{itemize}
+\item
+     \expsubheading{Google, Inc.}{May 2011-August 2011}{Software Engineering Intern, Google Chrome Team}
+     \begin{itemize}
+         \resitem{Designed and implemented the nacl-mounts library: a pluggable user-space file system for Google's Native Client which allows for storage to various back-end devices}
+         \resitem{Increased the distribution of the naclports build system from 3 to 26 machines}
+     \end{itemize}
+     
+\item
+   \expsubheading{University of California, Berkeley}{August 2011-Present}{Undergraduate Researcher, Computer Science Division, Berkeley Benchmarking and Optimization Group}
+    \begin{itemize}
+         \resitem{Exploring methods in optimizing of communication-avoiding numerical linear algebra algorithms}
+         \resitem{Researching parallel algorithms for numerical linear algebra in cloud computing environments}
+     \end{itemize}
+     
+\item
+    \expsubheading{Domestic Nuclear Threat Security Initiative}{June 2010-Present}{Research and Software Engineering Intern}
+    \begin{itemize}
+         \resitem{Developing an object-oriented, parallel, and multi-platform framework for implementing nuclear detector software for detecting nuclear sources and preventing nuclear threats in real time}
+         \resitem{Responsible for data analysys module, dynamic code generation tools, and software tests}
+     \end{itemize}    
+     
+\item
+   \expsubheading{University of California, Berkeley}{April 2010-October 2010}{Undergraduate Researcher, Department of Industrial Engineering and Operations Research}
+    \begin{itemize}
+         \resitem{Implemented Matlab software for analysis of MRI sequences of 160 patients from medical studies on patterns of development of knee osteoarthritis}
+     \end{itemize}
+\end{itemize}
+
+\resheading{Involvement}
+\begin{itemize}
+    \desitem{Committer,
+    Google Native Client Ports (naclports)}
+    \desitem{Tech Lead,
+    Developer Collective at Berkeley}
+    \desitem{Lab Assistant,
+    CS 61C--Great Ideas in Computer Architecture}
+    \desitem{Member,
+    Tau Beta Pi, The Engineering Honor Society}
+     \desitem{Member,
+    Eta Kappa Nu, The Electrical Engineering and Computer Sciences Honor Society}
+    \desitem{Member,
+    Alpha Pi Mu, The Industrial Engineering and Operations Research Honor Society}
+\end{itemize}
+
+\vspace{0.1in}
+
+\resheading{Skills}
+\begin{itemize}
+    \desitem{Languages:
+                    (Proficient): C, C++, Java, Python, Matlab, bash; (Experience): Perl, JavaScript}
+    \desitem{Misc. Computing Tools:
+                     Google App Engine, Hadoop, Qt, LaTeX, CUDA, OpenMP, MPI, svn, git}
+    \desitem{Operating Systems:
+                     OS X, Linux, various UNIX flavors}
+\end{itemize}
+
+\end{document}
