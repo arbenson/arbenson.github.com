@@ -3,131 +3,85 @@
   <head>
     <title>arbenson</title>
   </head>
-  <body>
-    <header>
-      <h2 align="left">Austin Reilley Benson - Research</h2>
-    </header>
-    <nav>
-      <a href="./index.html">Home</a> |
-      <a href="./research.html">Research</a> |
-      <a href="./portfolio/cv/cv.pdf">CV</a> |
-      <a href="./coursework.html">Course work</a>
-    </nav>
-    <br />
-    
-    <article align="left">
-      <h4><a name="bebop">Berkeley Benchmarking and Optimization Group</a></h4>
-      <p>The 
-	<a href="http://bebop.cs.berkeley.edu">BeBOP</a>
-	group is associated with the
-	<a href="http://parlab.eecs.berkeley.edu">Berkeley ParLab</a>.
-	My advisor is 
-	<a href="http://www.cs.berkeley.edu/~demmel/">Professor James Demmel</a>.
-      </p>
-      <p>I am currently working on Tall and Skinny QR (TSQR) factorizations in MapReduce frameworks. 
-        My CS 267 (Applications of Parallel Computing) project investigated TSQR using Hadoop on Magellan, a cloud testbed at NERSC.
-        Currently, I am working on data serialization methods to speed up the Hadoop job times.
-        I collaborate with 
-	<a href="http://www.cs.purdue.edu/homes/dgleich/">Professor David Gleich</a>.
-      </p>
-
+  <div style="margin-top:10px; margin-right:100px; margin-left:25px">
+    <body>
+      <header>
+	<h2 align="left">Austin Reilley Benson - Research</h2>
+      </header>
+      <nav>
+	<a href="./index.html">Home</a> |
+	<a href="./research.html">Research</a> |
+	<a href="./portfolio/cv/cv.pdf">CV</a> |
+	<a href="./coursework.html">Course work</a>
+      </nav>
       <br />
 
-      I have done two reports and two posters for this project:
-      <ul>
-        <li> <a href="./portfolio/Math221/AustinBenson-math221-report.pdf">Math 221 report</a> (Fall 2011)</li>
-        <li> <a href="./portfolio/Math221/AustinBenson-math221-poster.pdf">Math 221 poster</a> (Fall 2011)</li>
-        <li> <a href="./portfolio/CS267/AustinBenson-cs267-report.pdf">CS 267 report</a> (Spring 2011)</li>
-        <li> <a href="./portfolio/CS267/AustinBenson-cs267-poster.pdf">CS 267 poster</a> (Spring 2011)</li>
-      </ul>
+      <article align="left">
+	<style> h4{line-height: 0pt;} </style>
+	<h4><a name="bebop">MapReduce TSQR and Cholesky QR</a></h4>
+	with <a href="http://www.cs.purdue.edu/homes/dgleich/">Professor David Gleich</a> (Purdue), 
+	<a href="http://www.cs.berkeley.edu/~demmel/">Professor James Demmel</a> (UC-Berkeley), 
+	<a href="http://bebop.cs.berkeley.edu">BeBOP group</a> (UC-Berkeley, LBNL)
+	<br />
+	<p>We are currently working on Tall and Skinny QR (TSQR) and Tall and Skinny Cholesky QR (TSCQR) factorizations in MapReduce frameworks.
+           This work has looked at data serialization, programming language implementations (C++, Python), numerical stability, and performance
+           with faults.  Most work has used the Hadoop cluster on NERSC's Magellan cloud testbed.
+	</p>
 
-      <br />
-      <table>
-	<caption align="bottom"> <i>Left: MapReduce scheme for computing A<sup>t</sup>A.
-	    Right: MapReduce scheme for computing AR<sup>-1</sup>. </caption>
-	<tr>
-	  <td>
-	    <img src="./images/AtA_MR.png" height="30%" alt="AtA">
-	  </td>
-	  <td>
-	    <img src="./images/ARinv_MR.png" height="30%" alt="ARinv">
-	  </td>
-	</tr> 
-      </table>
-      <br/>
+	The software for this project is available on GitHub:
+	<ul>
+          <li> David's repository: <a href="https://github.com/dgleich/mrtsqr">https://github.com/dgleich/mrtsqr</a></li>
+          <li> My development fork: <a href="https://github.com/arbenson/mrtsqr">https://github.com/arbenson/mrtsqr</a></li>
+	</ul>
 
-      <br /><br />
-      <img src="./images/hr_line.jpg" width="100%" height="2" alt="">
+	I have completed two reports and two posters for this project:
+	<ul>
+          <li> <a href="./portfolio/Math221/AustinBenson-math221-report.pdf">Math 221 report</a> (Fall 2011)</li>
+          <li> <a href="./portfolio/Math221/AustinBenson-math221-poster.pdf">Math 221 poster</a> (Fall 2011)</li>
+          <li> <a href="./portfolio/CS267/AustinBenson-cs267-report.pdf">CS 267 report</a> (Spring 2011)</li>
+          <li> <a href="./portfolio/CS267/AustinBenson-cs267-poster.pdf">CS 267 poster</a> (Spring 2011)</li>
+	</ul>
+	<img src="./images/hr_line.jpg" width="100%" height="2" alt="">
 
-      <br />
-      <h4><a name="grif">Gamma-ray Imaging Framework</a></h4>
-      <br /><br />
-      <table>
-	<tr>
-	  <td>
-	    <img src="./images/donuts.png" height = "60%" width = "80%" alt="Donuts">
-	  </td>
-	  <td>
-	    <img src="./images/bearing.png" height = "60%" width = "60%" alt="Bearing">
-	  </td>
-	</tr>
-      </table>
-      <p>
-	The GRIF project is part of the Berkeley Applied Research on the Imaging of Neutrons and Gamma-rays
-	<a href="http://bearing.berkeley.edu/">(Bearing)</a> group, 
-	which is a subset of the Domestic Nuclear Threat Security Initiative
-	<a href="http://donuts.berkeley.edu/">(Donuts)</a>.  
-	My advisors are
-	<a href="http://www.nuc.berkeley.edu/People/Daniel_Chivers">Dr. Dan Chivers</a>
-        and Dr. Mark Bandstra.  The Bearing group is an interdisciplinary 
-	effort by students and researchers in nuclear engineering, (astro)physics, mathematics, 
-        electrical engineering, and computer science that works on problems in nuclear
-        detection.
-      </p>
-      <p>
-	I am developing a parallel, multi-platform software framework for gamma-ray imaging 
-        that is used for nuclear detection.  The project is designed to be flexible enough for researchers
-        outside of our group to adopt as a common model for detector software support.
-        I have worked on data analysis, backend architecture, and code generation techniques for the project.
-        The code generation allows end-users to tweak system parameters during run-time. The
-        picture below shows 15 channel reads that are updated in near-real-time in parallel.
-      </p>
-      <br /><br />
-      <img src="./images/grif_example.png" width="60%" align="center">
-      <br /><br />
-      <img src="./images/hr_line.jpg" width="100%" height="2" alt="">
-      <br />
-      <h4><a name="ieor">UC-Berkeley Department of Industrial Engineering and Operations Research</a></h4>
-      <p>
-	For the IEOR department, my advisors were 
-	<a href="http://www.ieor.berkeley.edu/~hochbaum/">Professor Dorit Hochbaum</a>
-	and 
-	<a href="http://www.eng.tau.ac.il/~barak/">Dr. Barak Fishbain.</a>
-      </p>
-      <p>
-	I performed research on algorithmic methods for computational biology.  Specifically, I looked
-	at MRI sequences provided by the OsteoArthritis Initiative
-	<a href="http://oai.epi-ucsf.org/datarelease/">(OAI)</a>.  
-	The OAI has an open database of knee scans along with accompanying data about the patients. The patients 
-	were followed over a 48-month period, and data is available over different visits over the time interval. 
-	This turns into a large data mining project for a community of researchers in engineering, computer science, and medicine. 
-	Below are two examples of how the images can be cut (using the pseudoflow maximum flow algorithm) to look at the cartilage 
-        or bone segment of the image. 
-      </p>
-      <table class="image">
-	<caption align="bottom"> <i>Left: Orignal MRI
-            Right:Cut of cartilage pixels</i> </caption>
-	<tr><td>
-            <img src="./images/cartilage_cut.png" width="600" height="320"><br />
-      </td></tr></table>
-      <table class="image">
-	<caption align="bottom"> <i>Left: Orignal MRI
-            Right:Cut of bone pixels. Total = #(total pixels), Cut = #(bone pixels in cut)</i> </caption>
-	<tr><td>
-            <img src="./images/bone_cut.png" width="600" height="350">
-      </td></tr></table>
-      <br />
-    </article>
-    <br /><br />
-  </body>
+	<br />
+	<style> h4{line-height: 0pt;} </style>
+	<h4><a name="grif">Gamma-ray Imaging Framework (GRIF)</a></h4>
+	with Dr. Dan Chivers (LBNL),
+        Dr. Mark Bandstra (UC-Berkeley, LBNL),
+        <a href="http://bearing.berkeley.edu/">Bearing group</a> (UC-Berkeley, LBNL, SSL),
+        <a href="http://donuts.berkeley.edu/">DoNuTS</a> (UC-Berkeley),
+        <a href="https://commons.lbl.gov/display/nsd/Applied+Nuclear+Physics">ANP group</a> (LBNL)
+
+	<p>
+          The Bearing group is an interdisciplinary effort by students and researchers in nuclear engineering, (astro)physics, mathematics, 
+          electrical engineering, and computer science that works on problems in nuclear detection.  The Bearing group is a part
+          of the Domestic Nuclear Threat Security Initiative (DoNuTS) at UC-Berkeley.
+	</p>
+	<p>
+	  Currently, the group is developing a parallel, multi-platform software framework for gamma-ray imaging 
+          that is used for real-time nuclear detection.  The project is designed to be flexible enough for researchers
+          outside of our group to adopt as a common model for detector software support.
+          My work has included data analysis, backend architecture, and code generation techniques for the project.
+	</p>
+          The software is currently closed-source, but an open-source beta release is expected in March 2012.  Stay tuned.
+	  <br /><br />
+	  <img src="./images/hr_line.jpg" width="100%" height="2" alt="">
+	  <style> h4{line-height: 0pt;} </style>
+	  <h4><a name="ieor">UC-Berkeley Department of Industrial Engineering and Operations Research</a></h4>
+          with <a href="http://www.ieor.berkeley.edu/~hochbaum/">Professor Dorit Hochbaum</a> (UC-Berkeley, USC),
+	  <a href="http://www.eng.tau.ac.il/~barak/">Dr. Barak Fishbain</a> (UC-Berkeley, USC, Technion IIT)
+	<p>
+	  This project looked at applications of algorithmic methods in computational biology.  We used data sets of
+          MRI sequences provided by the OsteoArthritis Initiative
+	  <a href="http://oai.epi-ucsf.org/datarelease/">(OAI)</a>. 
+	  The OAI has an open database of knee scans along with accompanying data about the patients. The patients 
+	  were followed over a 48-month period, and data is available over different visits over the time interval. 
+	  This turns into a large data mining project for a community of researchers in engineering, computer science, and medicine.
+          The project used the sequences to predict knee osteoarthritis development.  The bulk of the algorithmic work was
+          image segmentation, where we separated pixels into bone, cartilage, and noise.
+	</p>
+      </article>
+  </div>
+  <br /><br />
+</body>
 </html>
